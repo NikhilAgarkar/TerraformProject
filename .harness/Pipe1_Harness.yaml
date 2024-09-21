@@ -42,3 +42,9 @@ pipeline:
                   spec:
                     command: apply
         tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: HarnessGitHub
+        build: <+input>
+        sparseCheckout: []
